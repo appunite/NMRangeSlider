@@ -43,6 +43,8 @@
 // center location for the upper handle control
 @property(readonly, nonatomic) CGPoint upperCenter;
 
+// default NO
+@property(assign, nonatomic) BOOL handleHidden;
 
 // Images, these should be set before the control is displayed.
 // If they are not set, then the default images are used.

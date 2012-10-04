@@ -184,6 +184,7 @@
 
 - (UIImage *)trackImage
 {
+    
     if(_trackImage==nil)
     {
         UIImage* image = [UIImage imageNamed:@"slider-default-track"];
@@ -196,9 +197,10 @@
 
 - (UIImage *)lowerHandleImageNormal
 {
+
     if(_lowerHandleImageNormal==nil)
     {
-        UIImage* image = [UIImage imageNamed:@"slider-default-handle"];
+        UIImage* image = [UIImage imageNamed:(_handleHidden ? @"clear" : @"slider-default-handle")];
         _lowerHandleImageNormal = image;
     }
     
@@ -207,9 +209,10 @@
 
 - (UIImage *)lowerHandleImageHighlighted
 {
+    
     if(_lowerHandleImageHighlighted==nil)
     {
-        UIImage* image = [UIImage imageNamed:@"slider-default-handle-highlighted"];
+        UIImage* image = [UIImage imageNamed:(_handleHidden ? @"clear" : @"slider-default-handle-highlighted")];
         _lowerHandleImageHighlighted = image;
     }
     
@@ -218,9 +221,10 @@
 
 - (UIImage *)upperHandleImageNormal
 {
+    
     if(_upperHandleImageNormal==nil)
     {
-        UIImage* image = [UIImage imageNamed:@"slider-default-handle"];
+        UIImage* image = [UIImage imageNamed:(_handleHidden ? @"clear" : @"slider-default-handle")];
         _upperHandleImageNormal = image;
     }
     
@@ -229,9 +233,10 @@
 
 - (UIImage *)upperHandleImageHighlighted
 {
+    
     if(_upperHandleImageHighlighted==nil)
     {
-        UIImage* image = [UIImage imageNamed:@"slider-default-handle-highlighted"];
+        UIImage* image = [UIImage imageNamed:(_handleHidden ? @"clear" : @"slider-default-handle-highlighted")];
         _upperHandleImageHighlighted = image;
     }
     
